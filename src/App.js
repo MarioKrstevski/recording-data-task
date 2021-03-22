@@ -106,6 +106,10 @@ function App() {
     // for all of the tasks I went with separate for loop (but keeping complexity to maximum of one loop O(n))
     // if speed was really the required trait then I would put all logic into one single loop and calculate everything
     // i can along the way. But that ruins readibility and code separation
+
+    // Another way to get better speed is to use webWorkers to computate things in another thred, and not have our main thread be blocked and busywith computations so that the UI is broken and events are not caught on time
+
+
     return { ...stats };
   }
 

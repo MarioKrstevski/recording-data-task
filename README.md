@@ -4,7 +4,9 @@ This project uses `json-server` to make a route available on port 3004
 
 use this command ```json-server --watch db.json --port 3004```
 
+and then you can start react with the typical instructions below
 
+I left some comments to read
 
 # Getting Started with Create React App
 
