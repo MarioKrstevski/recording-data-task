@@ -6,7 +6,7 @@ use this command ```json-server --watch db.json --port 3004```
 
 and then you can start react with the typical instructions below
 
-I left some comments to read
+I left some comments to read and also to specify the reqirements,click on X to delete item, and drag it over another one to add it to that position
 
 # Getting Started with Create React App
 

@@ -36,6 +36,7 @@ function App() {
   }
 
   function deleteRecord(selectedRecTime) {
+    console.log('sel  ', selectedRecTime)
     setRecords(records.filter((rec) => rec.time !== selectedRecTime));
   }
   // this can be placed in another file

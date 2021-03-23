@@ -18,17 +18,16 @@ export default function Record({
     : "?";
 
   return (
-    <li
-      draggable
-      className="record-element"
-      onDragOver={(e) => {
-        e.preventDefault(); 
-      }}
-      onMouseDown={e => moveElementFrom(index)}
-      onDrop={(e)=> moveElementTo(index)}
- 
-    >
-      <div className="record-info">
+    <li className="record-element">
+      <div
+        className="record-info"
+        draggable
+        onDragOver={(e) => {
+          e.preventDefault();
+        }}
+        onMouseDown={(e) => moveElementFrom(index)}
+        onDrop={(e) => moveElementTo(index)}
+      >
         <div>Event type : {event.type} </div>
         <div>HTML Tag : {htmlTag} </div>
         <div>Event happened on {formatedDate}</div>
