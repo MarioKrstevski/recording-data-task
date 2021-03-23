@@ -109,7 +109,6 @@ function App() {
 
     // Another way to get better speed is to use webWorkers to computate things in another thred, and not have our main thread be blocked and busywith computations so that the UI is broken and events are not caught on time
 
-
     return { ...stats };
   }
 
@@ -137,16 +136,11 @@ function App() {
   }
 
   function moveElementFrom(position) {
-    console.log('ae', position)
     setFrom(position);
   }
   function moveElementTo(position) {
-    console.log('ae', position)
-
     if (from || from === 0) {
-      setRecords(
-        arrayMove([...records]), from, position)
-      ;
+      setRecords(arrayMove([...records], from, position));
     }
   }
 

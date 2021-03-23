@@ -20,13 +20,13 @@ export default function Record({
   return (
     <li
       draggable
-      onDragOverCapture={(e) => e.preventDefault()}
       className="record-element"
-      onDropCapture={(e) => moveElementTo(index)}
       onDragOver={(e) => {
-        e.preventDefault(); console.log(e)
+        e.preventDefault(); 
       }}
-      onDragStart={(e) => moveElementFrom(index)}
+      onMouseDown={e => moveElementFrom(index)}
+      onDrop={(e)=> moveElementTo(index)}
+ 
     >
       <div className="record-info">
         <div>Event type : {event.type} </div>
